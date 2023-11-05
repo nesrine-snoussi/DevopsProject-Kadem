@@ -1,4 +1,4 @@
 FROM openjdk:8
+ADD target/kaddem-Project-main-1.0.jar kaddem-Project-main-1.0.jar
 EXPOSE 9090
-ADD target/kaddem-Project-main.jar kaddem-Project-main.jar
-ENTRYPOINT ["java", "-jar","kaddem-Project-main"]
+ENTRYPOINT ["java", "-jar","/kaddem-Project-main-1.0.jar"]
